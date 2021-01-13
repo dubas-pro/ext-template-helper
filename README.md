@@ -42,7 +42,7 @@ You just need to add this string to your template:
 
 **Parameters:**
 + `dubasTranslateValue` - name of helper;
-+ `id` - id od specific record which will let us fetch value of field;
++ `id` - id of specific record which will let us fetch value of field;
 + `scope` - Scope from Label Manager;
 + `field` - Name of field with options;
 + `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
