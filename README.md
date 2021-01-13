@@ -34,7 +34,20 @@ You just need to add this string to your template:
 + `value` - Name of options; 
 + `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
 
+### dubasTranslateValue helper
+This helper will let you get label in specific language for actual value of field with options.
+You just need to add this string to your template:
+
+`{{dubasTranslateValue id scope='Task' field='status' language='pl_PL'}}`
+
+**Parameters:**
++ `dubasTranslateValue` - name of helper;
++ `id` - id od specific record which will let us fetch value of field;
++ `scope` - Scope from Label Manager;
++ `field` - Name of field with options;
++ `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
+
 ## TO DO
 1. ~~Helper which will translate labels of fields~~
 2. ~~Helper which will translate options~~
-3. Helper which will translate actual option field value
+3. ~~Helper which will translate actual option field value~~

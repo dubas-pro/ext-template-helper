@@ -1,4 +1,5 @@
 {
     "dubasTranslate": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasHelper::dubasTranslate",
-    "dubasTranslateOption": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasHelper::dubasTranslateOption"
+    "dubasTranslateOption": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasHelper::dubasTranslateOption",
+    "dubasTranslateValue": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasHelper::dubasTranslateValue"
 }
