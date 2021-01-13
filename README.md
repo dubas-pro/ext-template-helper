@@ -2,10 +2,11 @@
 Template helper for EspoCRM which will let you add translated strings to email or pdf template.
 
 ## Getting started
-1. Install our extension;
-2. Open template manager for PDF's or emails; 
-3. Create new template for testing purposes;
-4. In template use one of helpers delivered by extension. Below you can find available helpers
+1. Download installer from our [website](https://devcrm.it/template-helper):
+2. Install our extension;
+3. Open template manager for PDF's or emails; 
+4. Create new template for testing purposes;
+5. In template use one of helpers delivered by extension. Below you can find available helpers
 
 ### dubasTranslate helper
 This helper will let you get label of field in specific language.
