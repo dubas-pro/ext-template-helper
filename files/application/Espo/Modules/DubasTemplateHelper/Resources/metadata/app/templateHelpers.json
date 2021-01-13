@@ -1,3 +1,4 @@
 {
-    "dubasTranslate": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasHelper::dubasTranslate"
+    "dubasTranslate": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasHelper::dubasTranslate",
+    "dubasTranslateOption": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasHelper::dubasTranslateOption"
 }
