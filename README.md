@@ -28,7 +28,7 @@ You just need to add this string to your template:
 `{{dubasTranslateOption scope='Task' field='status' value='Canceled' language='de_DE'}}`
 
 **Parameters:**
-+ `dubasTranslate` - name of helper;
++ `dubasTranslateOption` - name of helper;
 + `scope` - Scope from Label Manager;
 + `field` - Name of field with options;
 + `value` - Name of options; 
