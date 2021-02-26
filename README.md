@@ -47,7 +47,21 @@ You just need to add this string to your template:
 + `field` - Name of field with options;
 + `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
 
+### dubasTranslateAddressField helper
+This helper will let you translate DubasAddress field in specific language for actual value.
+You just need to add this string to your template:
+
+`{{dubasTranslateAddressField id scope='Task' field='firstAddressCountry' language='pl_PL'}}`
+
+**Parameters:**
++ `dubasTranslateAddressField` - name of helper;
++ `id` - id of specific record which will let us fetch value of field;
++ `scope` - Scope from Label Manager;
++ `field` - Name of DubasAddress field in your EspoCRM;
++ `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
+
 ## TO DO
 1. ~~Helper which will translate labels of fields~~
 2. ~~Helper which will translate options~~
 3. ~~Helper which will translate actual option field value~~
+4. ~~Helper which will translate value of DubasAddress field~~
