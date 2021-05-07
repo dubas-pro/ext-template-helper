@@ -118,34 +118,12 @@ class DubasHelper
         $hash = $context['hash'];
         $data = $context['data']['root'];
 
-        $id = $args[0] ?? null; 
-
-        $scope     = $hash['scope'] ?? null;
-        $field     = $hash['field'] ?? null;
+        $value = $args[0] ?? null; 
         $language  = $hash['language'] ?? 'en_US';
 
-        $entityManager = $data['__entityManager'];
-
-        $entity    = $entityManager->getEntity($scope, $id);
-        $value     = $entity->get($field);
-
-        if 
-        (
-            !$scope
-            ||
-            !$field
-            ||
-            !$value
-        )
-        {
-            $html = null;
-        }
-        else
-        {
-            $translation = $data['__language'];
-            $translation->setLanguage($language);
-            $html = $translation->translate($value, 'countryLabels', 'DubasAddress');
-        }
+        $translation = $data['__language'];
+        $translation->setLanguage($language);
+        $html = $translation->translate($value, 'countryLabels', 'DubasAddress');
 
         return new LightnCandy\SafeString($html);
     }
