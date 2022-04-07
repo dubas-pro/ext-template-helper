@@ -36,9 +36,9 @@ class DubasSpellAmount implements Helper
         $number     = number_format($value, 2, '.', '');
         $language   = $data->getOption('language') ?? 'en_US';
 
-        $dollars    = $data->getOption('dollars') ?? 'dollars';
-        $cents      = $data->getOption('cents') ?? 'cents';
-        $and        = $data->getOption('and') ?? 'and';
+        $leftOperandText    = $data->getOption('leftOperandText') ?? 'dollars';
+        $rightOperandText   = $data->getOption('rightOperandText') ?? 'cents';
+        $separator          = $data->getOption('separator') ?? 'and';
 
         $a = bcmul($number, 100);
         $c = $a % 100;
@@ -46,6 +46,6 @@ class DubasSpellAmount implements Helper
 
         $amount = new \NumberFormatter($language, \NumberFormatter::SPELLOUT);
 
-        return Result::createSafeString(sprintf("%s $dollars $and %s $cents", $amount->format($d), $amount->format($c)));
+        return Result::createSafeString(sprintf("%s $leftOperandText $separator %s $rightOperandText", $amount->format($d), $amount->format($c)));
     }
 }
