@@ -73,3 +73,14 @@ You just need to add this string to your template:
 + `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
 
 If you use record in which you have amount set to 100, add to email template or pdf `{{dubasSpellAmount amount}}`. It'll print `one hundred dollars and zero cents`.
+
+### dubasSpellNumber helper
+This helper will let you transform number to words.
+You just need to add this string to your template:
+
+`{{dubasSpellNumber field language='pl_PL'}}`
+
+**Parameters:**
++ `dubasSpellNumber` - name of helper;
++ `field` - Name of field which contain amount in your EspoCRM - you should use currency type field;
++ `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
