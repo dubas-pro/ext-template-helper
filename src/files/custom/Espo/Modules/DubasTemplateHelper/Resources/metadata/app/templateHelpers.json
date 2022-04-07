@@ -3,5 +3,6 @@
     "dubasTranslateOption": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasTranslateOption",
     "dubasTranslateValue": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasTranslateValue",
     "dubasTranslateAddressField": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasTranslateAddressField",
-    "dubasSpellAmount": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasSpellAmount"
+    "dubasSpellAmount": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasSpellAmount",
+    "dubasSpellNumber": "Espo\\Modules\\DubasTemplateHelper\\TemplateHelpers\\DubasSpellNumber"
 }
