@@ -24,7 +24,7 @@ class DubasTranslateValue implements Helper
 
     public function render(Data $data): Result
     {
-        $id      = $data->getArgumentList()[0] ?? null;
+        $id         = $data->getArgumentList()[0] ?? null;
         $scope      = $data->getOption('scope') ?? null;
         $field      = $data->getOption('field') ?? null;
         $language   = $data->getOption('language') ?? 'en_US';

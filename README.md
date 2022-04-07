@@ -57,9 +57,3 @@ You just need to add this string to your template:
 + `dubasTranslateAddressField` - name of helper;
 + `field` - Name of DubasAddress field in your EspoCRM - if you want to translate country, you have to use for example billingAddressCountry;
 + `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
-
-## TO DO
-1. ~~Helper which will translate labels of fields~~
-2. ~~Helper which will translate options~~
-3. ~~Helper which will translate actual option field value~~
-4. ~~Helper which will translate value of DubasAddress field~~
