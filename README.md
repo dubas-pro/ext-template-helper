@@ -57,3 +57,19 @@ You just need to add this string to your template:
 + `dubasTranslateAddressField` - name of helper;
 + `field` - Name of DubasAddress field in your EspoCRM - if you want to translate country, you have to use for example billingAddressCountry;
 + `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
+
+### dubasSpellAmount helper
+This helper will let you translate DubasAddress field in specific language for actual value.
+You just need to add this string to your template:
+
+`{{dubasSpellAmount field leftOperandText="dollars" separator="and" rightOperandText="cents" language='pl_PL'}}`
+
+**Parameters:**
++ `dubasSpellAmount` - name of helper;
++ `field` - Name of field which contain amount in your EspoCRM - you should use currency type field;
++ `leftOperandText` - optional parameter which allow you to left operand text. If you don't define own, helper by default will use `dollars`.
++ `separator` - optional parameter which allow you to set own separator. If you don't define own separator, helper will use by default `and` as separator;
++ `rightOperandText` - optional parameter which allow you to set own operand text. If you don't define, helper by default will use `cents`;
++ `language` - optional language parameter which determine in which you want to get translation. If you don't use this parameter, helper will use as default `en_US`.
+
+If you use record in which you have amount set to 100, add to email template or pdf `{{dubasSpellAmount amount}}`. It'll print `one hundred dollars and zero cents`.
