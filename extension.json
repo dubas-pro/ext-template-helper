@@ -4,7 +4,7 @@
     "description": "Simple helper which will let you to get translations to your email or pdf template by dubas.pro. Paid support available through email contact@devcrm.it.",
     "author": "DUBAS - contact@dubas.pro",
     "acceptableVersions": [
-        ">=6.0.0"
+        ">=7.0.0"
     ],
     "php": [
         ">=7.4"
