@@ -1,0 +1,66 @@
+{
+    "license": [
+        "GPL-3.0-or-later"
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "dubas/espo-dev-lib": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "ssh://git@git.dubas.pro/dubas/espo-dev-lib.git"
+        }
+    ],
+    "scripts": {
+        "espo:rebuild": [
+            "@espo:copy",
+            "node build --rebuild"
+        ],
+        "espo:copy": "node build --copy",
+        "espo:clear-cache": "rm -rf site/data/cache/*",
+        "espo:tests-prepare": [
+            "@espo:copy",
+            "cd site && grunt test"
+        ],
+        "espo:tests-unit": [
+            "@espo:copy",
+            "cd site && vendor/bin/phpunit tests/unit/Espo/Modules/{@name}"
+        ],
+        "espo:tests-integration": [
+            "@espo:copy",
+            "cd site && vendor/bin/phpunit tests/integration/Espo/Modules/{@name}"
+        ],
+        "espo:merge-configs": "cd php_scripts && php merge_configs.php",
+        "espo:before-install": "cd php_scripts && php before_install.php",
+        "espo:after-install": "cd php_scripts && php after_install.php",
+        "espo:after-uninstall": "cd php_scripts && php after_uninstall.php",
+        "espo:cc": [
+            "@espo:copy",
+            "@espo:clear-cache"
+        ],
+        "espo:ccr": [
+            "@espo:cc",
+            "@espo:rebuild"
+        ],
+        "ecs": [
+            "vendor/bin/ecs check --fix"
+        ],
+        "rector": [
+            "vendor/bin/rector process"
+        ]
+    },
+    "extra": {
+        "scripts-description": {
+            "ecs": "Fix coding standards warnings/errors automatically with PHP Easy Coding Standard"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "rector/extension-installer": true
+        }
+    }
+}

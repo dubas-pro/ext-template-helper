@@ -1,0 +1,14 @@
+{
+    "module": "DubasTemplateHelper",
+    "name": "Dubas Template Helper",
+    "description": "Simple helper which will let you to get translations to your email or pdf template by dubas.pro. Paid support available through email contact@devcrm.it. [📄Documentation](https://docs.dubas.pro) [☢️Repo](https://github.com/dubas-pro/ext-template-helper)",
+    "author": "DUBAS - contact@dubas.pro",
+    "acceptableVersions": [
+        ">=7.0.0"
+    ],
+    "php": [
+        ">=7.4"
+    ],
+    "skipBackup": true,
+    "checkVersionUrl": "https://devcrm.it"
+}
