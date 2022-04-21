@@ -44,10 +44,10 @@ class DubasTranslateValue implements Helper
 
     public function render(Data $data): Result
     {
-        $id         = $data->getArgumentList()[0] ?? null;
-        $scope      = $data->getOption('scope') ?? null;
-        $field      = $data->getOption('field') ?? null;
-        $language   = $data->getOption('language') ?? 'en_US';
+        $id = $data->getArgumentList()[0] ?? null;
+        $scope = $data->getOption('scope') ?? null;
+        $field = $data->getOption('field') ?? null;
+        $language = $data->getOption('language') ?? 'en_US';
 
         if (!$scope || !$id || !$field) {
             $html = null;

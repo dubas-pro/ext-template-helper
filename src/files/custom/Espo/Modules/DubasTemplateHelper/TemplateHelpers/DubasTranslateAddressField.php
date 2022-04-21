@@ -40,8 +40,8 @@ class DubasTranslateAddressField implements Helper
 
     public function render(Data $data): Result
     {
-        $value      = $data->getArgumentList()[0] ?? null;
-        $language   = $data->getOption('language') ?? 'en_US';
+        $value = $data->getArgumentList()[0] ?? null;
+        $language = $data->getOption('language') ?? 'en_US';
 
         if (!$value) {
             $html = null;
