@@ -32,8 +32,8 @@ class DubasSpellNumber implements Helper
 {
     public function render(Data $data): Result
     {
-        $value      = $data->getArgumentList()[0] ?? null;
-        $language   = $data->getOption('language') ?? 'en_US';
+        $value = $data->getArgumentList()[0] ?? null;
+        $language = $data->getOption('language') ?? 'en_US';
 
         $f = new \NumberFormatter($language, \NumberFormatter::SPELLOUT);
 

@@ -49,7 +49,7 @@ class DubasTranslateValue implements Helper
         $field = $data->getOption('field') ?? null;
         $language = $data->getOption('language') ?? 'en_US';
 
-        if (!$scope || !$category || !$label) {
+        if (!$scope || !$id || !$field) {
             $html = null;
         } else {
             $entity = $this->entityManager->getEntity($scope, $id);

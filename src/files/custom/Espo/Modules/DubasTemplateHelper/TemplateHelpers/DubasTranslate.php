@@ -41,8 +41,8 @@ class DubasTranslate implements Helper
     public function render(Data $data): Result
     {
         $scope = $data->getOption('scope') ?? null;
-        $field = $data->getOption('field') ?? null;
-        $value = $data->getOption('value') ?? null;
+        $category = $data->getOption('category') ?? null;
+        $label = $data->getOption('label') ?? null;
         $language = $data->getOption('language') ?? 'en_US';
 
         if (!$scope || !$category || !$label) {

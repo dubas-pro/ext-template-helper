@@ -32,13 +32,13 @@ class DubasSpellAmount implements Helper
 {
     public function render(Data $data): Result
     {
-        $value      = $data->getArgumentList()[0] ?? null;
-        $number     = number_format($value, 2, '.', '');
-        $language   = $data->getOption('language') ?? 'en_US';
+        $value = $data->getArgumentList()[0] ?? null;
+        $number = number_format($value, 2, '.', '');
+        $language = $data->getOption('language') ?? 'en_US';
 
-        $leftOperandText    = $data->getOption('leftOperandText') ?? 'dollars';
-        $rightOperandText   = $data->getOption('rightOperandText') ?? 'cents';
-        $separator          = $data->getOption('separator') ?? 'and';
+        $leftOperandText = $data->getOption('leftOperandText') ?? 'dollars';
+        $rightOperandText = $data->getOption('rightOperandText') ?? 'cents';
+        $separator = $data->getOption('separator') ?? 'and';
 
         $a = bcmul($number, 100);
         $c = $a % 100;
